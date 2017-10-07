@@ -1,0 +1,17 @@
+.satterfield-sidenav-container {
+    /* */
+    border: 1px solid rgb(0, 0, 0, 0.5);
+}
+
+.satterfield-sidenav-container md-sidenav {
+    max-width: 200px;
+}
+
+.satterfield-sidenav {
+    padding: 20px;
+}
+
+.satterfield-main-content {
+    /* display: flex;
+    height: 1200px; */
+}

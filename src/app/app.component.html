@@ -1,4 +1,10 @@
-<app-header></app-header>
-<div class="container">
-  <router-outlet></router-outlet>
-</div>
+<app-header (sidenavToggle)="sidenav.open()"></app-header>
+<md-sidenav-container class="satterfield-sidenav-container">
+  <md-sidenav #sidenav class="satterfield-sidenav">
+    <app-sidenav></app-sidenav>
+  </md-sidenav>
+  
+  <div class="container satterfield-main-content">
+    <router-outlet></router-outlet>
+  </div>
+</md-sidenav-container>
