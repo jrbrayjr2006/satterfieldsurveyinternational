@@ -12,4 +12,8 @@ export class InstitutionsComponent implements OnInit {
   ngOnInit() {
   }
 
+  onAddInstitution() {
+    console.info("On adding a new institution...");
+  }
+
 }

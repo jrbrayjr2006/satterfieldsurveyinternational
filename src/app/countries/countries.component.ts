@@ -12,4 +12,8 @@ export class CountriesComponent implements OnInit {
   ngOnInit() {
   }
 
+  onAddCountry() {
+    console.info("On adding a new country...");
+  }
+
 }

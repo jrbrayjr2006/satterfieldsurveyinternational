@@ -16,13 +16,16 @@ import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { CountriesComponent } from './countries/countries.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'institutions', component: InstitutionsComponent},
+  { path: 'institutions', component: InstitutionsComponent },
   { path: 'patients', component: PatientsComponent },
   { path: 'physicians', component: PhysiciansComponent },
-  { path: 'countries', component: CountriesComponent }
+  { path: 'countries', component: CountriesComponent },
+  { path: 'not-found', component: PageNotFoundComponent },
+  { path: '**', redirectTo: '/not-found' }
 ];
 
 @NgModule({
@@ -34,7 +37,8 @@ const appRoutes: Routes = [
     PatientsComponent,
     HomeComponent,
     SidenavComponent,
-    CountriesComponent
+    CountriesComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
